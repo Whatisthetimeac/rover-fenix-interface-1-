@@ -1,0 +1,78 @@
+body {
+  background-color: #121212;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #00ffc8;
+  margin-bottom: 20px;
+}
+
+.status-mode {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.status-mode button {
+  margin-left: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #00ffc8;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.controls, .sensors {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 0 10px #00ffc880;
+}
+
+button {
+  margin: 10px;
+  padding: 15px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #00ffc8;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #00e6b3;
+}
+
+.sensor-label {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.sensor-value {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.background-gif {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://media.giphy.com/media/3o7aD2d7hy9ktXNDP2/giphy.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.08;
+  z-index: -1;
+}

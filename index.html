@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rover Fênix - Myths Brazil</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-gif"></div>
+  <h1>Rover Fênix - Myths Brazil</h1>
+
+  <div class="status-mode">
+    <span>Modo Atual:</span>
+    <span id="modo-atual">AUTÔNOMO</span>
+    <button onclick="alternarModo()">🔁 Alternar Modo</button>
+  </div>
+
+  <div class="controls" id="controle-manual" style="display: none;">
+    <h2>Controle Manual</h2>
+    <button onclick="enviarComando('F')">Frente</button>
+    <button onclick="enviarComando('B')">Ré</button>
+    <button onclick="enviarComando('L')">Esquerda</button>
+    <button onclick="enviarComando('R')">Direita</button>
+    <button onclick="enviarComando('S')">Parar</button>
+  </div>
+
+  <div class="sensors">
+    <h2>Sensores em Tempo Real</h2>
+    <div class="sensor-label">Distância Frontal (KY-032): <span class="sensor-value" id="distance-front">--</span> cm</div>
+    <div class="sensor-label">Inclinação (MPU6050): <span class="sensor-value" id="inclination">--</span></div>
+    <div class="sensor-label">Rotação da Roda (Hall): <span class="sensor-value" id="wheel-rotation">--</span> RPM</div>
+    <div class="sensor-label">Impacto/Vibração: <span class="sensor-value" id="impact">--</span></div>
+    <div class="sensor-label">Temperatura: <span class="sensor-value" id="temperature">--</span> °C</div>
+    <div class="sensor-label">Umidade: <span class="sensor-value" id="humidity">--</span> %</div>
+    <div class="sensor-label">Luminosidade: <span class="sensor-value" id="light-level">--</span> lx</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
